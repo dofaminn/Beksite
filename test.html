@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <title>Beksite</title>
+    <link rel="stylesheet" href="styles/test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="test.html">Beksite</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="uslugi.html">Услуги</a></li>
+      <li><a href="portfolio.html">Портфолио</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <label class="switch">
+      <input type="checkbox" id="dark-mode-toggle">
+      <span class="slider"></span>
+    </label>
+    </ul>
+  </nav>
+</header>
+
+<!-- Dark mode -->
+
+
+<script>
+const toggleSwitch = document.querySelector('#dark-mode-toggle');
+const body = document.querySelector('body');
+
+// при изменении состояния переключателя сохраняем значение в localStorage
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'enabled');
+  } else {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'disabled');
+  }
+});
+
+// при загрузке страницы проверяем, есть ли значение в localStorage, и устанавливаем соответствующий класс на body
+window.addEventListener('load', function() {
+  const darkMode = localStorage.getItem('darkMode');
+  if (darkMode === 'enabled') {
+    body.classList.add('dark-mode');
+    toggleSwitch.checked = true;
+  }
+});
+
+</script>
+
+<!-- Dark mode -->
+
+<div class="banner">
+  <div class="banner__image">
+    <img src="E:\BekSite\styles\img\imacc.png" alt="Image">
+  </div>
+  <div class="banner__content">
+    <h1 class="banner__title">Добро пожаловать в Beksite - эксперты в веб-разработке. Создадим удивительные сайты вместе!</h1>
+  </div>
+</div>
+
+
+
+
+<section class="team-section">
+  <div class="container">
+    <h2>Наша команда</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="E:\BekSite\styles\img\team members\customer5.jpg" alt="Team Member">
+        <h4>Serikbay Magzhan</h4>
+        <p>Специалист по SEO</p>
+      </div>
+      <div class="team-member">
+        <img src="E:\BekSite\styles\img\team members\4.png" alt="Team Member">
+        <h4>Amangeldi Ahmet</h4>
+        <p>Веб-дизайнер</p>
+      </div>
+      <div class="team-member">
+        <img src="E:\BekSite\styles\img\team members\customer3.jpg" alt="Team Member">
+        <h4>Muratbek Beknur</h4>
+        <p>Full-stack разработчик</p>
+      </div>
+        <div class="team-member">
+        <img src="E:\BekSite\styles\img\team members\8.png" alt="Team Member">
+        <h4>Adilbek Muhamed</h4>
+        <p>QA-инженер</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="testimonial-section">
+  <h2>Отзывы наших клиентов</h2>
+  <div class="testimonial-carousel">
+    <div class="testimonial">
+      <div class="testimonial-text">
+        <p>Спасибо большое BekSite за создание нашего сайта! Очень качественный и современный дизайн, сайт полностью соответствует нашим требованиям и ожиданиям. Очень довольны результатом!</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="E:\BekSite\styles\img\отзыв\web.png" alt="Client Name">
+        <h4>WebPro Solutions</h4>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-text">
+        <p>Я был очень впечатлен работой Beksite. Команда была очень профессиональной, искусной и творческой. Они не только сделали наш сайт более привлекательным и функциональным, но и помогли нам с нашим маркетинговым планом. Я настоятельно рекомендую их услуги!</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="E:\BekSite\styles\img\отзыв\codecraft_logo.jpg" alt="Client Name">
+        <h4>CodeCrafters LLC</h4>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-text">
+        <p>Beksite - это лучшая компания, с которой я работал в области веб-разработки. Они быстро и качественно реализовали наш проект, сделав все возможное, чтобы мы были довольны результатом. Я рекомендую их всем, кто ищет профессиональную команду для своего проекта.</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="E:\BekSite\styles\img\отзыв\pix.png" alt="Client Name">
+        <h4>PixelPerfect Web Design Inc.</h4>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>

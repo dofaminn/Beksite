@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>зкщмук</title>
+    <link rel="stylesheet" href="styles/prover.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header>
+      <label class="switch">
+      <input type="checkbox" id="dark-mode-toggle">
+      <span class="slider"></span>
+    </label>
+
+
+
+
+
+    </ul>
+  </nav>
+</header>
+<script>
+const toggleSwitch = document.querySelector('#dark-mode-toggle');
+const body = document.querySelector('body');
+
+// при изменении состояния переключателя сохраняем значение в localStorage
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'enabled');
+  } else {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'disabled');
+  }
+});
+
+// при загрузке страницы проверяем, есть ли значение в localStorage, и устанавливаем соответствующий класс на body
+window.addEventListener('load', function() {
+  const darkMode = localStorage.getItem('darkMode');
+  if (darkMode === 'enabled') {
+    body.classList.add('dark-mode');
+    toggleSwitch.checked = true;
+  }
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

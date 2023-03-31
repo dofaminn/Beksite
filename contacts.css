@@ -1,0 +1,354 @@
+.dark-mode {
+  background-color: #29272a;
+}
+.dark-mode .logo a{
+  color: #b1b1d8;
+}
+.dark-mode nav a{
+  color: #fafafa;
+}
+.dark-mode nav a:hover {
+  color: #e5e5e5;
+}
+.dark-mode .uslugi-text h1{
+  color: #fafafa;
+}
+.dark-mode .ili-text h1{
+  color: #fafafa;
+}
+.dark-mode .contact-info > div{
+  box-shadow: 15px 15px 0px rgba(250,250, 250, 1);
+  background-color: #262528;
+  border: #fafafa solid 3px;
+}
+.dark-mode .contact-info h2{
+  color: #fafafa;
+}
+.dark-mode .contact-info p{
+  color: #fafafa;
+  font-weight: 100;
+}
+.dark-mode .contact-info .email a{
+  color: #fafafa;
+} 
+.dark-mode .container{
+  background-color: #262528;
+  box-shadow: 15px 15px #fafafa;
+  border: 4px #fafafa solid;
+}
+.dark-mode h1{
+  color: #fafafa;
+}
+.dark-mode label{
+  color: #fafafa;
+  font-weight: 400;
+}
+.dark-mode input[type="submit"]{
+  background-color: #4d3372;
+}
+.dark-mode input[type="submit"]:hover{
+  background-color: #5d3f87;
+}
+
+
+
+/*darl mode*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+  margin-top: 12px;
+  border: solid 2px #fff;
+  border-radius: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle,#fff 0,#a8ebfb 100%);
+  transition: 0.25s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 0px;
+  bottom: 1px;
+  background: linear-gradient(130deg,#ffc851 0,#fff0a4 45%,#ffc851 45%,#fcb045 100%);
+  border: solid 0.1rem #ff9b04;
+  transition: 0.25s;
+  border-radius: 50%;
+}
+
+
+
+input:checked + .slider {
+  background: radial-gradient(circle,#d5d5d5 0,#525065 100%);
+}
+
+input:focus + .slider {
+}
+
+input:checked + .slider:before {
+  transform: translate(calc(2.9rem - 86%)) rotate(180deg);
+  background: radial-gradient(circle,#fafbfb 40%, #e4e5e5 50%, #d0d1d1 60%);
+  border: solid 0.1rem gray;
+}
+
+.slider:before {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+/*DarkMode*/
+/*DarkMode*/
+
+
+      /* Header styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.9rem;
+      }
+
+      .logo a {
+        font-family: 'jenthill';
+        font-size: 2.8rem;
+                color: #6fdcbf;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+      .logo img {
+          margin-left: 20px;
+          margin-top: 10px;
+          height: 85px;
+        }
+
+        nav {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-right: 20px;
+        }
+        nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+        nav li {
+          margin-left: 1.5rem;
+        }
+
+        nav li:first-child {
+          margin-left: 0;
+        }
+
+        nav a {
+          color: #333;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: bolder;
+          position: relative;
+        }
+
+        nav a::before {
+          content: "";
+          position: absolute;
+          bottom: -6px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #90B4C6;
+          transform: scaleX(0);
+          transition: transform 0.3s ease-in-out;
+        }
+
+
+        nav a:hover {
+          color: #666;
+        }
+
+              ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+      }
+
+      li {
+        margin-bottom: 2.1rem;
+      }
+
+      li a {
+        display: block;
+        margin-top: 1rem;
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2rem;
+        }
+
+        li a:hover {
+          color: #666;
+        }
+
+        .uslugi-text{
+                    padding-top: 40px;
+          padding-bottom: 40px;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          color:  #333333 ;
+          z-index: 1;
+        }
+
+         .ili-text{
+          padding-top: 60px;
+          padding-bottom: 40px;
+          top: 50%; 
+          left: 50%;
+          text-align: center;
+          z-index: 1;
+        }
+
+/* Стили для блока контактной информации */
+
+.circle {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #404040;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: -0px;
+  left: 20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #404040;
+} 
+
+
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 26px;
+}
+
+.contact-info > div {
+  width: calc(25.33% - 10px);
+  text-align: left;
+  background-color: #fff;
+  border-radius: 0px;
+  border: #404040 solid 3px;
+  padding: 20px;
+  box-shadow: 15px 15px 0px rgba(64, 64, 64, 1);
+}
+
+
+.phone p {
+  font-family: 'Mosk', sans-serif;
+  color: #404040;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-family: 'Mosk', sans-serif;
+  color: #404040;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.email a {
+    text-decoration: none;
+    color: #404040;
+}
+.contact-info h2 {
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 25px;
+  color: #404040;
+      letter-spacing: .04em;
+}
+
+
+/* Медиа-запрос для устройств с шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+  .contact-info > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu li a {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+  }
+}
+
+        /*footer styles*/
+        .footer-container {
+        padding: 0.1rem;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-grow: 1;
+      }
+
+
+      p {
+      font-family: 'Mosk', sans-serif;
+      font-weight: bold;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      }
+
+      /* Стили для скроллбара */
+        ::-webkit-scrollbar {
+          width: 12px; /* ширина скроллбара */
+        }
+
+        ::-webkit-scrollbar-track {
+          background-color: #fff; /* цвет фона трека скроллбара */
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: #6fdcbf; /* цвет ползунка скроллбара */
+          border-radius: 15px; /* радиус скругления углов ползунка */
+          border: 0px solid #fff; /* граница ползунка */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: #6fdcbf; /* цвет ползунка при наведении курсора */
+        }

@@ -1,0 +1,569 @@
+/*Dark Mode*/
+.dark-mode{
+  background: linear-gradient(to right, #29272a 0%, #29272a 32%, #774069 32%, #774069 100%);
+}
+.dark-mode ::-webkit-scrollbar {
+  width: 12px; /* ширина скроллбара */
+}
+.dark-mode ::-webkit-scrollbar-track {
+  background-color: #2a2339; /* цвет фона трека скроллбара */
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background-color: #774069; /* цвет ползунка скроллбара */
+  border-radius: 15px; /* радиус скругления углов ползунка */
+  border: 0px solid #fff; /* граница ползунка */
+}
+.dark-mode .banner__title{
+  color: #fafafa;
+}
+.dark-mode .banner__image img{
+  background-image: url(E/BekSit/style/img/imacc.png );
+}
+
+.dark-mode .logo a{
+  color: #b1b1d8;
+}
+.dark-mode nav a{
+  color: #fafafa;
+}
+.dark-mode nav a:hover {
+  color: #e5e5e5;
+}
+
+.dark-mode .team-section{
+  background: #2c2a32;
+}
+.dark-mode .team-member h4 {
+  color: #fafafa;
+}
+
+.dark-mode .team-member p {
+  color: #cbcbcb;
+}
+.dark-mode .team-section h2{
+  color: #fafafa;
+}
+.dark-mode .testimonial-section{
+  background-color: #4c3a69;
+}
+.dark-mode .testimonial-section h2{
+  color: #fafafa;
+}
+.dark-mode .testimonial{
+  background: #262427;
+}
+.dark-mode .testimonial-text p{
+  color: #fafafa;
+  font-weight: 400;
+}
+.dark-mode .testimonial-author h4{
+  color: #fafafa;
+}
+.dark-mode .footer-container{
+  background-color: #404040;
+}
+/*DarkMode*/
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+  margin-top: 10px;
+  border: solid 2px #fff;
+  border-radius: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle,#fff 0,#a8ebfb 100%);
+  transition: 0.25s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 0px;
+  bottom: 0.55px;
+  background: linear-gradient(130deg,#ffc851 0,#fff0a4 45%,#ffc851 45%,#fcb045 100%);
+  border: solid 0.1rem #ff9b04;
+  transition: 0.25s;
+  border-radius: 50%;
+}
+
+
+
+input:checked + .slider {
+  background: radial-gradient(circle,#d5d5d5 0,#525065 100%);
+}
+
+input:focus + .slider {
+}
+
+input:checked + .slider:before {
+  transform: translate(calc(2.9rem - 86%)) rotate(180deg);
+  background: radial-gradient(circle,#fafbfb 40%, #e4e5e5 50%, #d0d1d1 60%);
+  border: solid 0.1rem gray;
+}
+
+.slider:before {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+/*DarkMode*/
+/*DarkMode*/
+
+
+
+body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: Inter, sans-serif;
+        background: linear-gradient(to right, #f6f4f6 0%, #f6f4f6 32%, #6fdcbf 32%, #6fdcbf 100%);
+        transition: all .3s ease;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      /* Header styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+/*        background-color: rgba(255, 255, 255, 0.8);*/
+        padding: 1rem;
+      }
+
+      .logo a {
+        font-family: 'jenthill';
+        font-size: 2.8rem;
+        color: #6fdcbf;
+        text-decoration: none;
+        margin-left: 8.5px;
+      }
+      .logo img {
+          margin-left: 20px;
+          margin-top: 10px;
+          height: 85px;
+        }
+
+        nav {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-right: 20px;
+        }
+        nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+        nav li {
+          margin-left: 1.41rem;
+        }
+
+        nav li:first-child {
+          margin-left: 0;
+        }
+
+        nav a {
+          color: #333;
+          text-decoration: none;
+          font-size: 1.3rem;
+          position: relative;
+        }
+
+
+        nav a:hover {
+          color: #666;
+        }
+
+
+
+
+
+
+
+      /* Main styles */
+      main {
+        padding: 8rem 0;
+        padding-bottom: 5.5rem;
+      }
+
+
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      @font-face {
+        font-family: 'Jenthill';
+        src: url('E:/BekSite/Jenthill DEMO.ttf') format('truetype');
+        font-style: italic;
+        font-weight: normal;
+      }
+      @font-face {
+        font-family: 'Mosk Extra-Bold 800';
+        src: url('E:/BekSite/Mosk_Typeface/Mosk_Typeface/Mosk Extra-Bold 800.ttf') format('truetype');
+        font-style: italic;
+        font-weight: normal;
+      }
+
+      h3 {
+        z-index: 1;
+        font-family: 'Jenthill', sans-serif; 
+        font-size: 2rem;
+        font-style: italic;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        transform: rotate(-5deg);
+      }
+
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  overflow: hidden;
+  padding-bottom: 2.1rem;
+}
+
+.banner__image {
+  flex: 1;
+  text-align: center;
+  margin-left: 34px;
+}
+
+.banner__image img {
+  width: 70%;
+  border-radius: 20px;
+}
+
+.banner__content {
+  flex: 1;
+  text-align: left;
+  padding: 50px;
+}
+
+.banner__title {
+  font-size: 55px;
+  color: #404040;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+      .about-me-container p{
+        font-family: 'Mosk', sans-serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        font-size: var(--step-6);
+    line-height: 1.2;
+      }
+      .about-web-container p{
+        font-family: 'Mosk', sans-serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: 'Mosk', sans-serif;
+        font-weight: bold;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+
+
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+      }
+
+      li {
+        margin-bottom: 2rem;
+      }
+
+      li a {
+        display: block;
+        margin-top: 0.9rem;
+        margin-left: 1px;
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2rem;
+        }
+
+        li a:hover {
+          color: #666;
+        }
+
+
+
+
+.footer-container {
+  padding: 0.1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+
+
+
+
+/*carousel*/
+.testimonial-section {
+  background: #ae8fdb;
+  padding: 50px 0;
+}
+
+.testimonial-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial {
+  width: 400px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.testimonial-section h2{
+  color: #404040;
+  margin-left: 20px;
+}
+.testimonial-text {
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial-author h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.testimonial-author span {
+  font-size: 14px;
+  color: #888;
+}
+
+      /* Стили для скроллбара */
+        ::-webkit-scrollbar {
+          width: 12px; /* ширина скроллбара */
+        }
+
+        ::-webkit-scrollbar-track {
+          background-color: #fff; /* цвет фона трека скроллбара */
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: #6fdcbf; /* цвет ползунка скроллбара */
+          border-radius: 15px; /* радиус скругления углов ползунка */
+          border: 0px solid #fff; /* граница ползунка */
+        }
+
+
+/*team members*/
+.team-section {
+  background: #fef8b4;
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+
+  border-radius: 10px;
+
+  }
+
+h2 {
+  text-align: center;
+  color: #404040;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  margin: 2rem;
+  text-align: center;
+  max-width: 300px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.team-member h4 {
+  color: #404040;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+/*media запросы*/
+@media only screen and (max-width: 1200px){
+  .banner__title{
+    font-size: 41px;
+    margin-bottom: 0rem;
+    padding-bottom: 9rem;
+  }
+  nav a{
+    font-size: 1rem;
+    margin-top: 16px;
+  }
+  body{
+    box-sizing: border-box;
+  }
+  .team-member img{
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .banner__title{
+    font-size: 38px;
+    margin-bottom: 0rem;
+    padding-bottom: 6rem;
+  }
+  .team-member img{
+    width: 150px;
+    height: 150px;
+  }
+  .team-member h4{
+    font-size: 1.6rem;
+  }
+  .team-member p{
+    font-size: 1rem;
+  }
+  .testimonial-section h2{
+    font-size: 2.1rem;
+  }
+  .testimonial-author h4{
+    font-size: 13px;
+  }
+  .testimonial-text p{
+    font-size: 0.7rem;
+  }
+  nav a{
+    font-size: 0.85rem;
+    margin-top: 17px;
+  }
+  .logo a{
+    font-size: 2.3rem;
+  }
+  nav li {
+    margin-left: 0.4rem;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .banner__image img {
+    width: 0%;
+    border-radius: 20px;
+  }
+  body{
+    background: #f6f4f6;
+  }
+  .banner__content {
+  flex: 1;
+  text-align: center;
+  padding: 50px;
+  margin-right: 4.1rem;
+  margin-top: 27rem;
+  }
+  .banner{
+    padding-bottom: 33rem;
+  }
+    nav a{
+    font-size: 0.85rem;
+    margin-top: 17px;
+  }
+  .logo a{
+    font-size: 2.3rem;
+  }
+  nav li {
+    margin-left: 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 488px){
+  
+}
+
+@media only screen and (max-width: 328px){
+  
+}

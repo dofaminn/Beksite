@@ -1,0 +1,68 @@
+.dark-mode{
+  background: #404040;
+}
+body{
+  background: #d1d1d1;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+  margin-top: 13px;
+  border: solid 2px #fff;
+  border-radius: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle,#fff 0,#a8ebfb 100%);
+  transition: 0.25s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(130deg,#ffc851 0,#fff0a4 45%,#ffc851 45%,#fcb045 100%);
+  border: solid 0.1rem #ff9b04;
+  transition: 0.25s;
+  border-radius: 50%;
+}
+
+
+
+input:checked + .slider {
+  background: radial-gradient(circle,#d5d5d5 0,#525065 100%);
+}
+
+input:focus + .slider {
+}
+
+input:checked + .slider:before {
+  transform: translate(calc(2.9rem - 86%)) rotate(180deg);
+  background: radial-gradient(circle,#fafbfb 40%, #e4e5e5 50%, #d0d1d1 60%);
+  border: solid 0.1rem gray;
+}
+
+.slider:before {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+/*DarkMode*/

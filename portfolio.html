@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beksite - Портфолио</title>
+    <link rel="stylesheet" href="styles/styleportfolio.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="test.html">Beksite</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="uslugi.html">Услуги</a></li>
+      <li><a href="portfolio.html">Портфолио</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <label class="switch">
+      <input type="checkbox" id="dark-mode-toggle">
+      <span class="slider"></span>
+    </label>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+  <section class="portfolio-section">
+    <h1>Наше портфолио</h1>
+    <p>Ниже представлены примеры наших работ в области веб-разработки:</p>
+    <ul>
+      <li>
+        <a href="E:\BekSite\styles\img\портф\1p.jpg">
+          <img src="E:\BekSite\styles\img\портф\1.png" alt="Проект 1">
+          <div class="project-info">
+            <h2>Premium Plugins</h2>
+            <p>Мощные плагины Photoshop Premium</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="E:\BekSite\styles\img\портф\2p.jpg">
+          <img src="E:\BekSite\styles\img\портф\2.png" alt="Проект 2">
+          <div class="project-info">
+            <h2>Fantastical</h2>
+            <p>Magical calendar app for Watch</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="E:\BekSite\styles\img\портф\3p.jpg">
+          <img src="E:\BekSite\styles\img\портф\3.png" alt="Проект 3">
+          <div class="project-info">
+            <h2>Mixpanel</h2>
+            <p>Product analytics to boost growth</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+       <ul>
+      <li>
+        <a href="E:\BekSite\styles\img\портф\4p.jpg">
+          <img src="E:\BekSite\styles\img\портф\4.png" alt="Проект 1">
+          <div class="project-info">
+            <h2>dYdX academy</h2>
+            <p>Increase your knowledge</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="E:\BekSite\styles\img\портф\5p.jpg">
+          <img src="E:\BekSite\styles\img\портф\5.png" alt="Проект 2">
+          <div class="project-info">
+            <h2>Evergreen</h2>
+            <p>Give recognition and plant trees</p>
+          </div>
+        </a>
+<button class="btn btn-3" onclick="window.location.href='proekt1.html'">
+  <span>Посмотреть все...</span>
+</button>
+      </li>
+      <li>
+        <a href="E:\BekSite\styles\img\портф\6p.jpg">
+          <img src="E:\BekSite\styles\img\портф\6.png" alt="Проект 3">
+          <div class="project-info">
+            <h2>Our revolution</h2>
+            <p>We believe brands shape the future</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+
+
+
+
+
+
+<script>
+  const btn = document.querySelector('.btn');
+btn.addEventListener('click', () => {
+  // здесь можно добавить действие при клике на кнопку
+});
+
+</script>
+
+
+
+
+
+
+
+
+<script>
+const toggleSwitch = document.querySelector('#dark-mode-toggle');
+const body = document.querySelector('body');
+
+// при изменении состояния переключателя сохраняем значение в localStorage
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'enabled');
+  } else {
+    body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'disabled');
+  }
+});
+
+// при загрузке страницы проверяем, есть ли значение в localStorage, и устанавливаем соответствующий класс на body
+window.addEventListener('load', function() {
+  const darkMode = localStorage.getItem('darkMode');
+  if (darkMode === 'enabled') {
+    body.classList.add('dark-mode');
+    toggleSwitch.checked = true;
+  }
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("E:/BekSite/styles/img/bg4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      /* Header styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+      }
+
+      .logo a {
+        font-size: 3rem;
+        color: #333;
+        text-decoration: none;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        margin-left: 2rem;
+      }
+
+      nav li:first-child {
+        margin-left: 0;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+
+      nav a:hover {
+        color: #666;
+      }
+
+      /* Main styles */
+      main {
+        padding: 5rem 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+
+      /* News section styles */
+      .news-section {
+        background: url(E:/BekSite/styles/img/bg2.jpg);
+        border-radius: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+      }
+
+      .news-section h2 {
+        margin-top: ;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+      }
+
+      li {
+        margin-bottom: 2rem;
+      }
+
+      li a {
+        display: block;
+        margin-top: 1rem;
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2rem;
+        }
+
+        li a:hover {
+          color: #666;
+        }
+
